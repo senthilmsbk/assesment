@@ -1,0 +1,9 @@
+http://localhost:8761/
+
+curl -X POST "http://localhost:8080/auth/login" ^
+     -H "Content-Type: application/json" ^
+     -d "{\"username\": \"John Doe\", \"password\": \"jhon123\"}"
+
+curl -X POST "http://localhost:8080/auth/register" ^
+     -H "Content-Type: application/json" ^
+     -d "{\"username\": \"John Doe\", \"password\": \"jhon123\",\"role\": \"admin\", \"email\": \"jhon@gmail.com\"}"
